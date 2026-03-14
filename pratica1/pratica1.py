@@ -1,4 +1,4 @@
-from crud_alunos import (
+from pratica1.crud_alunos import (
     atualizar_aluno,
     buscar_aluno,
     cadastrar_aluno,
