@@ -1,0 +1,16 @@
+services:
+  api:
+    build: .
+    container_name: alunos_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    restart: always
+
+  tests:
+    build: .
+    container_name: alunos_tests
+    volumes:
+      - .:/app
+    command: pytest -v -p no:cacheprovider
