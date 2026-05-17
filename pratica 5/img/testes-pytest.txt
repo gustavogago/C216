@@ -1,0 +1,22 @@
+ Container pratica5_postgres Running 
+ Container pratica5_postgres Waiting 
+ Container pratica5_postgres Healthy 
+ Container pratica5-tests-run-5e5bc9a5d12e Creating 
+ Container pratica5-tests-run-5e5bc9a5d12e Created 
+============================= test session starts ==============================
+platform linux -- Python 3.10.20, pytest-9.0.3, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app
+configfile: pytest.ini
+plugins: anyio-4.13.0
+collecting ... collected 7 items
+
+tests/test_alunos.py::test_adiciona_tres_alunos_por_curso_e_lista_todos PASSED [ 14%]
+tests/test_alunos.py::test_buscar_aluno_por_id PASSED                    [ 28%]
+tests/test_alunos.py::test_atualizar_dados_do_aluno PASSED               [ 42%]
+tests/test_alunos.py::test_atualizar_curso_gera_novo_id_persistido PASSED [ 57%]
+tests/test_alunos.py::test_deletar_aluno_e_nao_reutilizar_id PASSED      [ 71%]
+tests/test_alunos.py::test_dados_persistem_entre_requisicoes_e_clients PASSED [ 85%]
+tests/test_alunos.py::test_resetar_lista_de_alunos PASSED                [100%]
+
+============================== 7 passed in 1.96s ===============================

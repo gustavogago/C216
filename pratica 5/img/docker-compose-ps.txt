@@ -1,0 +1,2 @@
+NAME                IMAGE         COMMAND                  SERVICE   CREATED              STATUS                        PORTS
+pratica5_postgres   postgres:15   "docker-entrypoint.s…"   db        About a minute ago   Up About a minute (healthy)   0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
